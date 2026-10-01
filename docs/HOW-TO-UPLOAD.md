@@ -6,7 +6,7 @@
 
 ## 1. Create your profile repo
 1. Go to **github.com/new**
-2. Repository name: **`Dhrumil-Kharadi`** (exactly your username — GitHub shows a
+2. Repository name: **`Dhrumil-Kharadi`** (exactly your username - GitHub shows a
    "✨ special repository" message when it's right)
 3. **Public**, don't add a README → **Create repository**
 
@@ -34,7 +34,7 @@ Commit to **main**.
    profile (it then refreshes itself every 12 hours).
 
 ## 4. Finish the rest
-Open `PINNED-REPOS.md` and work through it — pins, repo descriptions, topics,
+Open `PINNED-REPOS.md` and work through it - pins, repo descriptions, topics,
 profile settings and photo.
 
 ## Optional: use git instead of drag-and-drop

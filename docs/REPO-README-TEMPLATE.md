@@ -9,7 +9,7 @@
 
 # [PROJECT NAME]
 
-**[One-line pitch — what it does and for whom.]**
+**[One-line pitch - what it does and for whom.]**
 
 [![Live](https://img.shields.io/badge/Live-[domain.com]-0b0b0b?style=for-the-badge&logo=vercel&logoColor=f4f3ef)]([https://domain.com])
 [![Award](https://img.shields.io/badge/[1st_Place]-[IIT_Gandhinagar]-f4f3ef?style=for-the-badge&labelColor=0b0b0b)](#)
@@ -25,9 +25,9 @@
 
 ## ✦ Features
 
-- **[Feature]** — [what it does / why it matters]
-- **[Feature]** — [what it does / why it matters]
-- **[Feature]** — [what it does / why it matters]
+- **[Feature]** - [what it does / why it matters]
+- **[Feature]** - [what it does / why it matters]
+- **[Feature]** - [what it does / why it matters]
 
 ## ✦ Architecture
 
@@ -61,8 +61,8 @@ docker compose up --build # or: npm install && npm run dev
 
 ## ✦ What I built
 
-- [Your specific contribution — e.g. "designed the 10-agent LangGraph orchestration"]
-- [Production work — e.g. "set up CI/CD, Nginx reverse proxy, zero-downtime deploys"]
+- [Your specific contribution - e.g. "designed the 10-agent LangGraph orchestration"]
+- [Production work - e.g. "set up CI/CD, Nginx reverse proxy, zero-downtime deploys"]
 
 ---
 
