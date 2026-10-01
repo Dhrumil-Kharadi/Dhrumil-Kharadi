@@ -8,11 +8,11 @@
       .rise { opacity: 0; animation: rise 1.2s cubic-bezier(.16,1,.3,1) forwards; }
       .d1 { animation-delay: .1s } .d2 { animation-delay: .35s } .d3 { animation-delay: .7s } .d4 { animation-delay: 1s }
       @keyframes rise { from { opacity: 0; transform: translateY(18px) } to { opacity: 1; transform: none } }
-      .float { animation: float 7s ease-in-out infinite; transform-origin: 900px 205px; }
-      @keyframes float { 0%,100% { transform: translateY(0) rotate(0deg) } 50% { transform: translateY(-10px) rotate(4deg) } }
+      .float { animation: float 7s ease-in-out infinite; transform-origin: 905px 196px; }
+      @keyframes float { 0%,100% { transform: translateY(0) rotate(0deg) } 50% { transform: translateY(-10px) rotate(5deg) } }
       .dot { animation: step 6s infinite; }
       .s1 { animation-delay: 0s } .s2 { animation-delay: .75s } .s3 { animation-delay: 1.5s } .s4 { animation-delay: 2.25s } .s5 { animation-delay: 3s }
-      @keyframes step { 0% { fill: transparent } 8%, 85% { fill: #0b0b0b } 100% { fill: transparent } }
+      @keyframes step { 0% { fill: transparent } 8%, 85% { fill: #f4f3ef } 100% { fill: transparent } }
       .wire { stroke-dasharray: 34; stroke-dashoffset: 34; animation: wire 6s infinite; }
       .w2 { animation-delay: .75s } .w3 { animation-delay: 1.5s } .w4 { animation-delay: 2.25s }
       @keyframes wire { 0% { stroke-dashoffset: 34 } 12%, 85% { stroke-dashoffset: 0 } 100% { stroke-dashoffset: 34 } }
@@ -20,15 +20,20 @@
       @keyframes live { 0% { opacity: .35 } 6%, 70% { opacity: 1 } 100% { opacity: .35 } }
     </style>
 
-    <!-- paper -->
-    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#f6f5f1"/>
-      <stop offset="1" stop-color="#eeede8"/>
+    <!-- ink panel -->
+    <linearGradient id="ink" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#141414"/>
+      <stop offset="1" stop-color="#070707"/>
+    </linearGradient>
+    <linearGradient id="rim" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".28"/>
+      <stop offset=".35" stop-color="#ffffff" stop-opacity=".06"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity=".12"/>
     </linearGradient>
 
     <!-- blueprint grid -->
     <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
-      <path d="M48 0H0V48" fill="none" stroke="#0b0b0b" stroke-opacity=".05" stroke-width="1"/>
+      <path d="M48 0H0V48" fill="none" stroke="#ffffff" stroke-opacity=".05" stroke-width="1"/>
     </pattern>
     <radialGradient id="gridFade" cx=".72" cy=".5" r=".6">
       <stop offset="0" stop-color="#fff"/>
@@ -36,71 +41,77 @@
     </radialGradient>
     <mask id="gridMask"><rect width="1200" height="420" fill="url(#gridFade)"/></mask>
 
-    <!-- charcoal smoke: drifting fractal noise turned into soft alpha -->
+    <!-- white smoke: drifting fractal noise turned into soft alpha -->
     <filter id="smoke" x="0" y="0" width="100%" height="100%">
       <feTurbulence type="fractalNoise" baseFrequency="0.0045 0.011" numOctaves="4" seed="11">
         <animate attributeName="baseFrequency" dur="28s" repeatCount="indefinite"
                  values="0.0045 0.011;0.0058 0.0145;0.0045 0.011"/>
       </feTurbulence>
-      <feColorMatrix values="0 0 0 0 0.05  0 0 0 0 0.05  0 0 0 0 0.05  0 0 0 2.4 -1.05"/>
+      <feColorMatrix values="0 0 0 0 0.96  0 0 0 0 0.96  0 0 0 0 0.95  0 0 0 2.4 -1.05"/>
       <feGaussianBlur stdDeviation="2"/>
     </filter>
-    <radialGradient id="plume" cx=".75" cy=".62" r=".55">
+    <radialGradient id="plume" cx=".75" cy=".6" r=".55">
       <stop offset="0" stop-color="#fff" stop-opacity="1"/>
-      <stop offset=".55" stop-color="#fff" stop-opacity=".55"/>
+      <stop offset=".55" stop-color="#fff" stop-opacity=".5"/>
       <stop offset="1" stop-color="#fff" stop-opacity="0"/>
     </radialGradient>
     <mask id="plumeMask"><rect width="1200" height="420" fill="url(#plume)"/></mask>
 
-    <!-- anomalous matter: displaced sphere with a lit stone-grain surface -->
-    <radialGradient id="clay" cx=".36" cy=".3" r=".8">
-      <stop offset="0" stop-color="#fdfcf9"/>
-      <stop offset=".45" stop-color="#e2e1dc"/>
-      <stop offset=".8" stop-color="#9e9d98"/>
-      <stop offset="1" stop-color="#5d5c58"/>
+    <!-- soft rim light behind the matter -->
+    <radialGradient id="halo" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".16"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
     </radialGradient>
-    <filter id="matter" x="-30%" y="-30%" width="160%" height="160%">
-      <feTurbulence type="turbulence" baseFrequency="0.0075" numOctaves="1" seed="4" result="warp">
+
+    <!-- anomalous matter: smoothly displaced sphere with a lit stone-grain surface -->
+    <radialGradient id="clay" cx=".34" cy=".28" r=".85">
+      <stop offset="0" stop-color="#fbfaf7"/>
+      <stop offset=".38" stop-color="#d6d5d0"/>
+      <stop offset=".72" stop-color="#7a7975"/>
+      <stop offset="1" stop-color="#262624"/>
+    </radialGradient>
+    <filter id="matter" x="-35%" y="-35%" width="170%" height="170%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.0062" numOctaves="1" seed="4" result="warp">
         <animate attributeName="baseFrequency" dur="16s" repeatCount="indefinite"
-                 values="0.0075;0.0095;0.0075"/>
+                 values="0.0062;0.0078;0.0062"/>
       </feTurbulence>
-      <feDisplacementMap in="SourceGraphic" in2="warp" scale="58" xChannelSelector="R" yChannelSelector="G" result="shape"/>
+      <feDisplacementMap in="SourceGraphic" in2="warp" scale="46" xChannelSelector="R" yChannelSelector="G" result="shape"/>
       <feTurbulence type="fractalNoise" baseFrequency="0.55" numOctaves="2" seed="9" result="grain"/>
-      <feDiffuseLighting in="grain" surfaceScale="1.6" lighting-color="#ffffff" result="lit">
-        <feDistantLight azimuth="225" elevation="58"/>
+      <feDiffuseLighting in="grain" surfaceScale="1.4" lighting-color="#ffffff" result="lit">
+        <feDistantLight azimuth="225" elevation="60"/>
       </feDiffuseLighting>
       <feComposite in="lit" in2="shape" operator="in" result="tex"/>
-      <feBlend in="shape" in2="tex" mode="multiply" result="textured"/>
-      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#000" flood-opacity=".18"/>
+      <feBlend in="shape" in2="tex" mode="multiply"/>
     </filter>
   </defs>
 
   <!-- background -->
-  <rect width="1200" height="420" rx="24" fill="url(#paper)"/>
+  <rect x=".5" y=".5" width="1199" height="419" rx="24" fill="url(#ink)" stroke="url(#rim)"/>
   <rect width="1200" height="420" rx="24" fill="url(#grid)" mask="url(#gridMask)"/>
-  <g mask="url(#plumeMask)" opacity=".55">
+  <g mask="url(#plumeMask)" opacity=".42">
     <rect width="1200" height="420" filter="url(#smoke)"/>
   </g>
 
   <!-- 3D matter -->
+  <circle cx="905" cy="196" r="190" fill="url(#halo)"/>
   <g class="float">
-    <circle cx="900" cy="205" r="122" fill="url(#clay)" filter="url(#matter)"/>
+    <circle cx="905" cy="196" r="112" fill="url(#clay)" filter="url(#matter)"/>
   </g>
 
   <!-- meta -->
-  <g class="mono rise d1" font-size="12" letter-spacing="3" fill="#0b0b0b" fill-opacity=".55">
+  <g class="mono rise d1" font-size="12" letter-spacing="3" fill="#f4f3ef" fill-opacity=".5">
     <text x="64" y="64">DEVOPS ENGINEER · FULL-STACK DEVELOPER</text>
     <text x="1136" y="64" text-anchor="end">AHMEDABAD, IN</text>
   </g>
 
   <!-- name -->
-  <text class="display rise d2" x="60" y="196" font-size="104" letter-spacing="-5" fill="#0b0b0b">DHRUMIL</text>
-  <text class="serif rise d3" x="118" y="282" font-size="92" letter-spacing="-1" fill="#0b0b0b">Kharadi</text>
+  <text class="display rise d2" x="60" y="196" font-size="104" letter-spacing="-5" fill="#f4f3ef">DHRUMIL</text>
+  <text class="serif rise d3" x="118" y="282" font-size="92" letter-spacing="-1" fill="#f4f3ef">Kharadi</text>
 
   <!-- pipeline: commit → build → test → deploy → live -->
-  <g transform="translate(64 340)"><g class="rise d4">
-    <rect x="0" y="-22" width="520" height="44" rx="22" fill="#ffffff" fill-opacity=".72" stroke="#0b0b0b" stroke-opacity=".1"/>
-    <g fill="none" stroke="#0b0b0b" stroke-width="1.3">
+  <g transform="translate(64 350)"><g class="rise d4">
+    <rect x="0" y="-22" width="520" height="44" rx="22" fill="#ffffff" fill-opacity=".05" stroke="#ffffff" stroke-opacity=".14"/>
+    <g fill="none" stroke="#f4f3ef" stroke-width="1.3">
       <circle cx="26" cy="0" r="6"/><circle class="dot s1" cx="26" cy="0" r="6" stroke="none"/>
       <circle cx="128" cy="0" r="6"/><circle class="dot s2" cx="128" cy="0" r="6" stroke="none"/>
       <circle cx="218" cy="0" r="6"/><circle class="dot s3" cx="218" cy="0" r="6" stroke="none"/>
@@ -111,7 +122,7 @@
       <path class="wire w3" d="M268 0h34"/>
       <path class="wire w4" d="M376 0h34"/>
     </g>
-    <g class="mono" font-size="11" letter-spacing="1.6" fill="#0b0b0b">
+    <g class="mono" font-size="11" letter-spacing="1.6" fill="#f4f3ef">
       <text x="38" y="4">COMMIT</text>
       <text x="140" y="4">BUILD</text>
       <text x="230" y="4">TEST</text>
@@ -120,6 +131,6 @@
     </g>
   </g></g>
 
-  <!-- signature line -->
-  <text class="mono rise d4" x="1136" y="344" text-anchor="end" font-size="12" letter-spacing="2" fill="#0b0b0b" fill-opacity=".55">SHIPS IT. KEEPS IT UP.</text>
+  <!-- signature line: clear of the matter -->
+  <text class="mono rise d4" x="1136" y="384" text-anchor="end" font-size="12" letter-spacing="2" fill="#f4f3ef" fill-opacity=".45">SHIPS IT. KEEPS IT UP.</text>
 </svg>

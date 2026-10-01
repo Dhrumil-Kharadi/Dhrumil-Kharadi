@@ -1,63 +1,70 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="600" height="300" viewBox="0 0 600 300" role="img" aria-label="CUDAS — AI interview &amp; career roadmap portal">
   <title>CUDAS — AI interview &amp; career roadmap portal</title>
   <defs>
-    <linearGradient id="cudas-paper" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#fbfaf7"/>
-      <stop offset="1" stop-color="#efeee9"/>
+    <linearGradient id="cudas-ink" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#151515"/>
+      <stop offset="1" stop-color="#080808"/>
     </linearGradient>
     <linearGradient id="cudas-rim" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#ffffff"/>
-      <stop offset=".4" stop-color="#0b0b0b" stop-opacity=".1"/>
-      <stop offset="1" stop-color="#0b0b0b" stop-opacity=".05"/>
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".3"/>
+      <stop offset=".35" stop-color="#ffffff" stop-opacity=".06"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity=".12"/>
     </linearGradient>
     <pattern id="cudas-hatch" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(-25)">
-      <path d="M0 0V12" stroke="#0b0b0b" stroke-opacity=".045"/>
+      <path d="M0 0V12" stroke="#ffffff" stroke-opacity=".03"/>
     </pattern>
-    <radialGradient id="cudas-orb" cx=".35" cy=".3" r=".8">
-      <stop offset="0" stop-color="#fdfcf9"/><stop offset=".55" stop-color="#d9d8d3"/><stop offset="1" stop-color="#77766f"/>
+    <linearGradient id="cudas-chrome" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/><stop offset=".42" stop-color="#dcdcd8"/>
+      <stop offset=".52" stop-color="#6e6e6b"/><stop offset=".64" stop-color="#f0f0ed"/><stop offset="1" stop-color="#9c9c99"/>
+    </linearGradient>
+    <radialGradient id="cudas-orb" cx=".34" cy=".28" r=".85">
+      <stop offset="0" stop-color="#fbfaf7"/><stop offset=".45" stop-color="#cfcec9"/><stop offset=".8" stop-color="#6d6c68"/><stop offset="1" stop-color="#2a2a28"/>
     </radialGradient>
-    <filter id="cudas-warp" x="-30%" y="-30%" width="160%" height="160%">
-      <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="2" seed="14" result="n"/>
-      <feDisplacementMap in="SourceGraphic" in2="n" scale="26" xChannelSelector="R" yChannelSelector="G"/>
+    <radialGradient id="cudas-halo" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".14"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="cudas-warp" x="-35%" y="-35%" width="170%" height="170%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.016" numOctaves="1" seed="14" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="18" xChannelSelector="R" yChannelSelector="G"/>
     </filter>
     <style>
-      .arrow { transition: transform .3s; }
       .orb { animation: spin 18s linear infinite; transform-origin: 520px 78px; }
       @keyframes spin { to { transform: rotate(360deg) } }
     </style>
   </defs>
   
-  <rect x=".5" y=".5" width="599" height="299" rx="20" fill="url(#cudas-paper)" stroke="url(#cudas-rim)"/>
+  <rect x=".5" y=".5" width="599" height="299" rx="20" fill="url(#cudas-ink)" stroke="url(#cudas-rim)"/>
   <rect x="1" y="1" width="598" height="298" rx="20" fill="url(#cudas-hatch)"/>
-  <g class="orb"><circle cx="520" cy="78" r="38" fill="url(#cudas-orb)" filter="url(#cudas-warp)"/></g>
+  <circle cx="520" cy="78" r="70" fill="url(#cudas-halo)"/>
+  <g class="orb"><circle cx="520" cy="78" r="36" fill="url(#cudas-orb)" filter="url(#cudas-warp)"/></g>
 
-  <text x="32" y="48" font-family='"JetBrains Mono", SFMono-Regular, Consolas, "Liberation Mono", monospace' font-size="12" letter-spacing="2" fill="#0b0b0b" fill-opacity=".5">02</text>
-  <text x="70" y="48" font-family='"JetBrains Mono", SFMono-Regular, Consolas, "Liberation Mono", monospace' font-size="11" letter-spacing="2" fill="#0b0b0b" fill-opacity=".5">TOP 7 · SIH GRAND FINALE</text>
+  <text x="32" y="48" font-family='"JetBrains Mono", SFMono-Regular, Consolas, "Liberation Mono", monospace' font-size="12" letter-spacing="2" fill="#f4f3ef" fill-opacity=".45">02</text>
+  <text x="70" y="48" font-family='"JetBrains Mono", SFMono-Regular, Consolas, "Liberation Mono", monospace' font-size="11" letter-spacing="2" fill="#f4f3ef" fill-opacity=".45">TOP 7 · SIH GRAND FINALE</text>
 
-  <text x="30" y="128" font-family='"Arial Black", "Helvetica Neue", Arial, sans-serif' font-weight="900" font-size="52" letter-spacing="-2" fill="#0b0b0b">CUDAS</text>
-  <text x="32" y="166" font-family='Georgia, "Times New Roman", serif' font-style="italic" font-size="21" fill="#0b0b0b" fill-opacity=".62">AI interview &amp; career roadmap portal</text>
+  <text x="30" y="128" font-family='"Arial Black", "Helvetica Neue", Arial, sans-serif' font-weight="900" font-size="52" letter-spacing="-2" fill="#f4f3ef">CUDAS</text>
+  <text x="32" y="166" font-family='Georgia, "Times New Roman", serif' font-style="italic" font-size="21" fill="#f4f3ef" fill-opacity=".6">AI interview &amp; career roadmap portal</text>
 
   <g transform="translate(32 196)">
-      <rect width="96" height="26" rx="13" fill="#ffffff" fill-opacity="0.75" stroke="#0b0b0b" stroke-opacity="0.14"/>
-      <text x="48" y="16.96" text-anchor="middle" font-family='"JetBrains Mono", SFMono-Regular, Consolas, "Liberation Mono", monospace' font-size="11" letter-spacing="1.4" fill="#0b0b0b">LANGCHAIN</text>
+      <rect width="96" height="26" rx="13" fill="#ffffff" fill-opacity=".04" stroke="#ffffff" stroke-opacity=".16"/>
+      <text x="48" y="16.96" text-anchor="middle" font-family='"JetBrains Mono", SFMono-Regular, Consolas, "Liberation Mono", monospace' font-size="11" letter-spacing="1.4" fill="#f4f3ef" fill-opacity=".85">LANGCHAIN</text>
     </g>
-    <g transform="translate(136 196)">
-      <rect width="48" height="26" rx="13" fill="#ffffff" fill-opacity="0.75" stroke="#0b0b0b" stroke-opacity="0.14"/>
-      <text x="24" y="16.96" text-anchor="middle" font-family='"JetBrains Mono", SFMono-Regular, Consolas, "Liberation Mono", monospace' font-size="11" letter-spacing="1.4" fill="#0b0b0b">RAG</text>
+  <g transform="translate(136 196)">
+      <rect width="48" height="26" rx="13" fill="#ffffff" fill-opacity=".04" stroke="#ffffff" stroke-opacity=".16"/>
+      <text x="24" y="16.96" text-anchor="middle" font-family='"JetBrains Mono", SFMono-Regular, Consolas, "Liberation Mono", monospace' font-size="11" letter-spacing="1.4" fill="#f4f3ef" fill-opacity=".85">RAG</text>
     </g>
-    <g transform="translate(192 196)">
-      <rect width="48" height="26" rx="13" fill="#ffffff" fill-opacity="0.75" stroke="#0b0b0b" stroke-opacity="0.14"/>
-      <text x="24" y="16.96" text-anchor="middle" font-family='"JetBrains Mono", SFMono-Regular, Consolas, "Liberation Mono", monospace' font-size="11" letter-spacing="1.4" fill="#0b0b0b">OCR</text>
+  <g transform="translate(192 196)">
+      <rect width="48" height="26" rx="13" fill="#ffffff" fill-opacity=".04" stroke="#ffffff" stroke-opacity=".16"/>
+      <text x="24" y="16.96" text-anchor="middle" font-family='"JetBrains Mono", SFMono-Regular, Consolas, "Liberation Mono", monospace' font-size="11" letter-spacing="1.4" fill="#f4f3ef" fill-opacity=".85">OCR</text>
     </g>
-    <g transform="translate(248 196)">
-      <rect width="72" height="26" rx="13" fill="#ffffff" fill-opacity="0.75" stroke="#0b0b0b" stroke-opacity="0.14"/>
-      <text x="36" y="16.96" text-anchor="middle" font-family='"JetBrains Mono", SFMono-Regular, Consolas, "Liberation Mono", monospace' font-size="11" letter-spacing="1.4" fill="#0b0b0b">AGENTS</text>
+  <g transform="translate(248 196)">
+      <rect width="72" height="26" rx="13" fill="#ffffff" fill-opacity=".04" stroke="#ffffff" stroke-opacity=".16"/>
+      <text x="36" y="16.96" text-anchor="middle" font-family='"JetBrains Mono", SFMono-Regular, Consolas, "Liberation Mono", monospace' font-size="11" letter-spacing="1.4" fill="#f4f3ef" fill-opacity=".85">AGENTS</text>
     </g>
 
-  <line x1="32" y1="252" x2="568" y2="252" stroke="#0b0b0b" stroke-opacity=".1"/>
-  <text x="32" y="278" font-family='"JetBrains Mono", SFMono-Regular, Consolas, "Liberation Mono", monospace' font-size="12" letter-spacing="1" fill="#0b0b0b" fill-opacity=".7">cudas.vercel.app</text>
+  <line x1="32" y1="252" x2="568" y2="252" stroke="#ffffff" stroke-opacity=".1"/>
+  <text x="32" y="278" font-family='"JetBrains Mono", SFMono-Regular, Consolas, "Liberation Mono", monospace' font-size="12" letter-spacing="1" fill="#f4f3ef" fill-opacity=".7">cudas.vercel.app</text>
   <g transform="translate(542 262)">
-    <circle cx="13" cy="13" r="13" fill="#0b0b0b"/>
-    <path d="M9 17 17 9M11 9h6v6" fill="none" stroke="#f4f3ef" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="13" cy="13" r="13" fill="#f4f3ef"/>
+    <path d="M9 17 17 9M11 9h6v6" fill="none" stroke="#0b0b0b" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
   </g>
 </svg>

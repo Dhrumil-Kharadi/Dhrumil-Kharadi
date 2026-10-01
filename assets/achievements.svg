@@ -1,51 +1,50 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="210" viewBox="0 0 1200 210" role="img" aria-label="Hackathon achievements">
   <title>Hackathon achievements</title>
   <defs>
-    <linearGradient id="wins-paper" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#fbfaf7"/>
-      <stop offset="1" stop-color="#efeee9"/>
+    <linearGradient id="wins-ink" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#151515"/>
+      <stop offset="1" stop-color="#080808"/>
     </linearGradient>
     <linearGradient id="wins-rim" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#ffffff"/>
-      <stop offset=".4" stop-color="#0b0b0b" stop-opacity=".1"/>
-      <stop offset="1" stop-color="#0b0b0b" stop-opacity=".05"/>
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".3"/>
+      <stop offset=".35" stop-color="#ffffff" stop-opacity=".06"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity=".12"/>
     </linearGradient>
     <pattern id="wins-hatch" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(-25)">
-      <path d="M0 0V12" stroke="#0b0b0b" stroke-opacity=".045"/>
+      <path d="M0 0V12" stroke="#ffffff" stroke-opacity=".03"/>
     </pattern>
-    <linearGradient id="steel" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#0b0b0b"/><stop offset=".45" stop-color="#2b2b2b"/>
-      <stop offset=".55" stop-color="#8d8d8a"/><stop offset=".68" stop-color="#1a1a1a"/><stop offset="1" stop-color="#4a4a48"/>
-    </linearGradient>
-  </defs>
+    <linearGradient id="wins-chrome" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/><stop offset=".42" stop-color="#dcdcd8"/>
+      <stop offset=".52" stop-color="#6e6e6b"/><stop offset=".64" stop-color="#f0f0ed"/><stop offset="1" stop-color="#9c9c99"/>
+    </linearGradient></defs>
   
-  <rect x=".5" y=".5" width="1199" height="209" rx="20" fill="url(#wins-paper)" stroke="url(#wins-rim)"/>
+  <rect x=".5" y=".5" width="1199" height="209" rx="20" fill="url(#wins-ink)" stroke="url(#wins-rim)"/>
   <g transform="translate(48 40)">
-    <rect width="264" height="130" rx="16" fill="#ffffff" fill-opacity=".75" stroke="#0b0b0b" stroke-opacity=".1"/>
-    <text x="20" y="30" font-family='"JetBrains Mono", SFMono-Regular, Consolas, "Liberation Mono", monospace' font-size="10.5" letter-spacing="1.8" fill="#0b0b0b" fill-opacity=".5">01</text>
-    <text x="244" y="30" text-anchor="end" font-family='"JetBrains Mono", SFMono-Regular, Consolas, "Liberation Mono", monospace' font-size="10.5" letter-spacing="1.4" fill="#0b0b0b" fill-opacity=".5">IIT GANDHINAGAR</text>
-    <text x="18" y="86" font-family='"Arial Black", "Helvetica Neue", Arial, sans-serif' font-weight="900" font-size="40" letter-spacing="-2" fill="url(#steel)">1st</text>
-    <text x="20" y="112" font-family='Helvetica Neue, Arial, sans-serif' font-size="14" fill="#0b0b0b" fill-opacity=".72">Codeversity AI Hackathon</text>
+    <rect width="264" height="130" rx="16" fill="#ffffff" fill-opacity=".035" stroke="#ffffff" stroke-opacity=".12"/>
+    <text x="20" y="30" font-family='"JetBrains Mono", SFMono-Regular, Consolas, "Liberation Mono", monospace' font-size="10.5" letter-spacing="1.8" fill="#f4f3ef" fill-opacity=".45">01</text>
+    <text x="244" y="30" text-anchor="end" font-family='"JetBrains Mono", SFMono-Regular, Consolas, "Liberation Mono", monospace' font-size="10.5" letter-spacing="1.4" fill="#f4f3ef" fill-opacity=".45">IIT GANDHINAGAR</text>
+    <text x="18" y="86" font-family='"Arial Black", "Helvetica Neue", Arial, sans-serif' font-weight="900" font-size="40" letter-spacing="-2" fill="url(#wins-chrome)">1st</text>
+    <text x="20" y="112" font-family='Helvetica Neue, Arial, sans-serif' font-size="14" fill="#f4f3ef" fill-opacity=".7">Codeversity AI Hackathon</text>
   </g>
   <g transform="translate(328 40)">
-    <rect width="264" height="130" rx="16" fill="#ffffff" fill-opacity=".75" stroke="#0b0b0b" stroke-opacity=".1"/>
-    <text x="20" y="30" font-family='"JetBrains Mono", SFMono-Regular, Consolas, "Liberation Mono", monospace' font-size="10.5" letter-spacing="1.8" fill="#0b0b0b" fill-opacity=".5">02</text>
-    <text x="244" y="30" text-anchor="end" font-family='"JetBrains Mono", SFMono-Regular, Consolas, "Liberation Mono", monospace' font-size="10.5" letter-spacing="1.4" fill="#0b0b0b" fill-opacity=".5">MICROSOFT GURUGRAM</text>
-    <text x="18" y="86" font-family='"Arial Black", "Helvetica Neue", Arial, sans-serif' font-weight="900" font-size="40" letter-spacing="-2" fill="url(#steel)">Top 5</text>
-    <text x="20" y="112" font-family='Helvetica Neue, Arial, sans-serif' font-size="14" fill="#0b0b0b" fill-opacity=".72">Hack for Green Bharat</text>
+    <rect width="264" height="130" rx="16" fill="#ffffff" fill-opacity=".035" stroke="#ffffff" stroke-opacity=".12"/>
+    <text x="20" y="30" font-family='"JetBrains Mono", SFMono-Regular, Consolas, "Liberation Mono", monospace' font-size="10.5" letter-spacing="1.8" fill="#f4f3ef" fill-opacity=".45">02</text>
+    <text x="244" y="30" text-anchor="end" font-family='"JetBrains Mono", SFMono-Regular, Consolas, "Liberation Mono", monospace' font-size="10.5" letter-spacing="1.4" fill="#f4f3ef" fill-opacity=".45">MICROSOFT GURUGRAM</text>
+    <text x="18" y="86" font-family='"Arial Black", "Helvetica Neue", Arial, sans-serif' font-weight="900" font-size="40" letter-spacing="-2" fill="url(#wins-chrome)">Top 5</text>
+    <text x="20" y="112" font-family='Helvetica Neue, Arial, sans-serif' font-size="14" fill="#f4f3ef" fill-opacity=".7">Hack for Green Bharat</text>
   </g>
   <g transform="translate(608 40)">
-    <rect width="264" height="130" rx="16" fill="#ffffff" fill-opacity=".75" stroke="#0b0b0b" stroke-opacity=".1"/>
-    <text x="20" y="30" font-family='"JetBrains Mono", SFMono-Regular, Consolas, "Liberation Mono", monospace' font-size="10.5" letter-spacing="1.8" fill="#0b0b0b" fill-opacity=".5">03</text>
-    <text x="244" y="30" text-anchor="end" font-family='"JetBrains Mono", SFMono-Regular, Consolas, "Liberation Mono", monospace' font-size="10.5" letter-spacing="1.4" fill="#0b0b0b" fill-opacity=".5">GRAND FINALE</text>
-    <text x="18" y="86" font-family='"Arial Black", "Helvetica Neue", Arial, sans-serif' font-weight="900" font-size="40" letter-spacing="-2" fill="url(#steel)">Top 7</text>
-    <text x="20" y="112" font-family='Helvetica Neue, Arial, sans-serif' font-size="14" fill="#0b0b0b" fill-opacity=".72">Smart India Hackathon</text>
+    <rect width="264" height="130" rx="16" fill="#ffffff" fill-opacity=".035" stroke="#ffffff" stroke-opacity=".12"/>
+    <text x="20" y="30" font-family='"JetBrains Mono", SFMono-Regular, Consolas, "Liberation Mono", monospace' font-size="10.5" letter-spacing="1.8" fill="#f4f3ef" fill-opacity=".45">03</text>
+    <text x="244" y="30" text-anchor="end" font-family='"JetBrains Mono", SFMono-Regular, Consolas, "Liberation Mono", monospace' font-size="10.5" letter-spacing="1.4" fill="#f4f3ef" fill-opacity=".45">GRAND FINALE</text>
+    <text x="18" y="86" font-family='"Arial Black", "Helvetica Neue", Arial, sans-serif' font-weight="900" font-size="40" letter-spacing="-2" fill="url(#wins-chrome)">Top 7</text>
+    <text x="20" y="112" font-family='Helvetica Neue, Arial, sans-serif' font-size="14" fill="#f4f3ef" fill-opacity=".7">Smart India Hackathon</text>
   </g>
   <g transform="translate(888 40)">
-    <rect width="264" height="130" rx="16" fill="#ffffff" fill-opacity=".75" stroke="#0b0b0b" stroke-opacity=".1"/>
-    <text x="20" y="30" font-family='"JetBrains Mono", SFMono-Regular, Consolas, "Liberation Mono", monospace' font-size="10.5" letter-spacing="1.8" fill="#0b0b0b" fill-opacity=".5">04</text>
-    <text x="244" y="30" text-anchor="end" font-family='"JetBrains Mono", SFMono-Regular, Consolas, "Liberation Mono", monospace' font-size="10.5" letter-spacing="1.4" fill="#0b0b0b" fill-opacity=".5">TOP 100 INDIA</text>
-    <text x="18" y="86" font-family='"Arial Black", "Helvetica Neue", Arial, sans-serif' font-weight="900" font-size="40" letter-spacing="-2" fill="url(#steel)">Top 10</text>
-    <text x="20" y="112" font-family='Helvetica Neue, Arial, sans-serif' font-size="14" fill="#0b0b0b" fill-opacity=".72">AMD Slingshot · Gujarat</text>
+    <rect width="264" height="130" rx="16" fill="#ffffff" fill-opacity=".035" stroke="#ffffff" stroke-opacity=".12"/>
+    <text x="20" y="30" font-family='"JetBrains Mono", SFMono-Regular, Consolas, "Liberation Mono", monospace' font-size="10.5" letter-spacing="1.8" fill="#f4f3ef" fill-opacity=".45">04</text>
+    <text x="244" y="30" text-anchor="end" font-family='"JetBrains Mono", SFMono-Regular, Consolas, "Liberation Mono", monospace' font-size="10.5" letter-spacing="1.4" fill="#f4f3ef" fill-opacity=".45">TOP 100 INDIA</text>
+    <text x="18" y="86" font-family='"Arial Black", "Helvetica Neue", Arial, sans-serif' font-weight="900" font-size="40" letter-spacing="-2" fill="url(#wins-chrome)">Top 10</text>
+    <text x="20" y="112" font-family='Helvetica Neue, Arial, sans-serif' font-size="14" fill="#f4f3ef" fill-opacity=".7">AMD Slingshot · Gujarat</text>
   </g>
 </svg>
