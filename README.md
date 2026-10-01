@@ -6,7 +6,6 @@
   <a href="https://www.linkedin.com/in/dhrumil-kharadi-639620324/"><img src="https://img.shields.io/badge/LinkedIn-0b0b0b?style=for-the-badge&logo=linkedin&logoColor=f4f3ef" alt="LinkedIn" /></a>
   <a href="mailto:dhumil05@gmail.com"><img src="https://img.shields.io/badge/Email-0b0b0b?style=for-the-badge&logo=gmail&logoColor=f4f3ef" alt="Email" /></a>
   <a href="./assets/Dhrumil-Kharadi-Resume.pdf"><img src="https://img.shields.io/badge/Résumé-f4f3ef?style=for-the-badge&logo=readdotcv&logoColor=0b0b0b" alt="Résumé" /></a>
-  <img src="https://komarev.com/ghpvc/?username=Dhrumil-Kharadi&style=for-the-badge&color=0b0b0b&label=PROFILE+VIEWS" alt="Profile views" />
 </p>
 
 <br />
