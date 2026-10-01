@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="362" viewBox="0 0 1200 362" role="img" aria-label="Tech stack">
+  <title>Tech stack</title>
+  <defs>
+    <linearGradient id="stack-paper" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fbfaf7"/>
+      <stop offset="1" stop-color="#efeee9"/>
+    </linearGradient>
+    <linearGradient id="stack-rim" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset=".4" stop-color="#0b0b0b" stop-opacity=".1"/>
+      <stop offset="1" stop-color="#0b0b0b" stop-opacity=".05"/>
+    </linearGradient>
+    <pattern id="stack-hatch" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(-25)">
+      <path d="M0 0V12" stroke="#0b0b0b" stroke-opacity=".045"/>
+    </pattern></defs>
+  
+  <rect x=".5" y=".5" width="1199" height="361" rx="20" fill="url(#stack-paper)" stroke="url(#stack-rim)"/>
+  <text x="48" y="54" font-family='"Arial Black", "Helvetica Neue", Arial, sans-serif' font-weight="900" font-size="26" letter-spacing="-1" fill="#0b0b0b">STACK</text>
+  <text x="152" y="54" font-family='Georgia, "Times New Roman", serif' font-style="italic" font-size="24" fill="#0b0b0b" fill-opacity=".6">in production</text>
+  <text x="48" y="113" font-family='"JetBrains Mono", SFMono-Regular, Consolas, "Liberation Mono", monospace' font-size="12" letter-spacing="2.4" fill="#0b0b0b" fill-opacity=".55">DEVOPS &amp; INFRA</text>
+  <g transform="translate(240 92)">
+      <rect width="78" height="32" rx="16" fill="#ffffff" fill-opacity="0.75" stroke="#0b0b0b" stroke-opacity="0.14"/>
+      <text x="39" y="20.32" text-anchor="middle" font-family='"JetBrains Mono", SFMono-Regular, Consolas, "Liberation Mono", monospace' font-size="12" letter-spacing="1.2" fill="#0b0b0b">DOCKER</text>
+    </g>
+  <g transform="translate(328 92)">
+      <rect width="112" height="32" rx="16" fill="#ffffff" fill-opacity="0.75" stroke="#0b0b0b" stroke-opacity="0.14"/>
+      <text x="56" y="20.32" text-anchor="middle" font-family='"JetBrains Mono", SFMono-Regular, Consolas, "Liberation Mono", monospace' font-size="12" letter-spacing="1.2" fill="#0b0b0b">KUBERNETES</text>
+    </g>
+  <g transform="translate(450 92)">
+      <rect width="146" height="32" rx="16" fill="#ffffff" fill-opacity="0.75" stroke="#0b0b0b" stroke-opacity="0.14"/>
+      <text x="73" y="20.32" text-anchor="middle" font-family='"JetBrains Mono", SFMono-Regular, Consolas, "Liberation Mono", monospace' font-size="12" letter-spacing="1.2" fill="#0b0b0b">GITHUB ACTIONS</text>
+    </g>
+  <g transform="translate(606 92)">
+      <rect width="70" height="32" rx="16" fill="#ffffff" fill-opacity="0.75" stroke="#0b0b0b" stroke-opacity="0.14"/>
+      <text x="35" y="20.32" text-anchor="middle" font-family='"JetBrains Mono", SFMono-Regular, Consolas, "Liberation Mono", monospace' font-size="12" letter-spacing="1.2" fill="#0b0b0b">CI/CD</text>
+    </g>
+  <g transform="translate(686 92)">
+      <rect width="70" height="32" rx="16" fill="#ffffff" fill-opacity="0.75" stroke="#0b0b0b" stroke-opacity="0.14"/>
+      <text x="35" y="20.32" text-anchor="middle" font-family='"JetBrains Mono", SFMono-Regular, Consolas, "Liberation Mono", monospace' font-size="12" letter-spacing="1.2" fill="#0b0b0b">NGINX</text>
+    </g>
+  <g transform="translate(766 92)">
+      <rect width="70" height="32" rx="16" fill="#ffffff" fill-opacity="0.75" stroke="#0b0b0b" stroke-opacity="0.14"/>
+      <text x="35" y="20.32" text-anchor="middle" font-family='"JetBrains Mono", SFMono-Regular, Consolas, "Liberation Mono", monospace' font-size="12" letter-spacing="1.2" fill="#0b0b0b">KAFKA</text>
+    </g>
+  <g transform="translate(846 92)">
+      <rect width="70" height="32" rx="16" fill="#ffffff" fill-opacity="0.75" stroke="#0b0b0b" stroke-opacity="0.14"/>
+      <text x="35" y="20.32" text-anchor="middle" font-family='"JetBrains Mono", SFMono-Regular, Consolas, "Liberation Mono", monospace' font-size="12" letter-spacing="1.2" fill="#0b0b0b">LINUX</text>
+    </g>
+  <g transform="translate(926 92)">
+      <rect width="104" height="32" rx="16" fill="#ffffff" fill-opacity="0.75" stroke="#0b0b0b" stroke-opacity="0.14"/>
+      <text x="52" y="20.32" text-anchor="middle" font-family='"JetBrains Mono", SFMono-Regular, Consolas, "Liberation Mono", monospace' font-size="12" letter-spacing="1.2" fill="#0b0b0b">TERRAFORM</text>
+    </g>
+  <g transform="translate(1040 92)">
+      <rect width="53" height="32" rx="16" fill="#ffffff" fill-opacity="0.75" stroke="#0b0b0b" stroke-opacity="0.14"/>
+      <text x="26.5" y="20.32" text-anchor="middle" font-family='"JetBrains Mono", SFMono-Regular, Consolas, "Liberation Mono", monospace' font-size="12" letter-spacing="1.2" fill="#0b0b0b">AWS</text>
+    </g>
+  <g transform="translate(240 134)">
+      <rect width="146" height="32" rx="16" fill="#ffffff" fill-opacity="0.75" stroke="#0b0b0b" stroke-opacity="0.14"/>
+      <text x="73" y="20.32" text-anchor="middle" font-family='"JetBrains Mono", SFMono-Regular, Consolas, "Liberation Mono", monospace' font-size="12" letter-spacing="1.2" fill="#0b0b0b">LOAD BALANCING</text>
+    </g>
+  <g transform="translate(396 134)">
+      <rect width="53" height="32" rx="16" fill="#ffffff" fill-opacity="0.75" stroke="#0b0b0b" stroke-opacity="0.14"/>
+      <text x="26.5" y="20.32" text-anchor="middle" font-family='"JetBrains Mono", SFMono-Regular, Consolas, "Liberation Mono", monospace' font-size="12" letter-spacing="1.2" fill="#0b0b0b">CDN</text>
+    </g>
+  <g transform="translate(459 134)">
+      <rect width="53" height="32" rx="16" fill="#ffffff" fill-opacity="0.75" stroke="#0b0b0b" stroke-opacity="0.14"/>
+      <text x="26.5" y="20.32" text-anchor="middle" font-family='"JetBrains Mono", SFMono-Regular, Consolas, "Liberation Mono", monospace' font-size="12" letter-spacing="1.2" fill="#0b0b0b">DNS</text>
+    </g>
+  <text x="48" y="227" font-family='"JetBrains Mono", SFMono-Regular, Consolas, "Liberation Mono", monospace' font-size="12" letter-spacing="2.4" fill="#0b0b0b" fill-opacity=".55">BACKEND &amp; DATA</text>
+  <g transform="translate(240 206)">
+      <rect width="87" height="32" rx="16" fill="#ffffff" fill-opacity="0.75" stroke="#0b0b0b" stroke-opacity="0.14"/>
+      <text x="43.5" y="20.32" text-anchor="middle" font-family='"JetBrains Mono", SFMono-Regular, Consolas, "Liberation Mono", monospace' font-size="12" letter-spacing="1.2" fill="#0b0b0b">NODE.JS</text>
+    </g>
+  <g transform="translate(337 206)">
+      <rect width="87" height="32" rx="16" fill="#ffffff" fill-opacity="0.75" stroke="#0b0b0b" stroke-opacity="0.14"/>
+      <text x="43.5" y="20.32" text-anchor="middle" font-family='"JetBrains Mono", SFMono-Regular, Consolas, "Liberation Mono", monospace' font-size="12" letter-spacing="1.2" fill="#0b0b0b">FASTAPI</text>
+    </g>
+  <g transform="translate(434 206)">
+      <rect width="104" height="32" rx="16" fill="#ffffff" fill-opacity="0.75" stroke="#0b0b0b" stroke-opacity="0.14"/>
+      <text x="52" y="20.32" text-anchor="middle" font-family='"JetBrains Mono", SFMono-Regular, Consolas, "Liberation Mono", monospace' font-size="12" letter-spacing="1.2" fill="#0b0b0b">REST APIS</text>
+    </g>
+  <g transform="translate(548 206)">
+      <rect width="78" height="32" rx="16" fill="#ffffff" fill-opacity="0.75" stroke="#0b0b0b" stroke-opacity="0.14"/>
+      <text x="39" y="20.32" text-anchor="middle" font-family='"JetBrains Mono", SFMono-Regular, Consolas, "Liberation Mono", monospace' font-size="12" letter-spacing="1.2" fill="#0b0b0b">PYTHON</text>
+    </g>
+  <g transform="translate(636 206)">
+      <rect width="112" height="32" rx="16" fill="#ffffff" fill-opacity="0.75" stroke="#0b0b0b" stroke-opacity="0.14"/>
+      <text x="56" y="20.32" text-anchor="middle" font-family='"JetBrains Mono", SFMono-Regular, Consolas, "Liberation Mono", monospace' font-size="12" letter-spacing="1.2" fill="#0b0b0b">POSTGRESQL</text>
+    </g>
+  <g transform="translate(758 206)">
+      <rect width="87" height="32" rx="16" fill="#ffffff" fill-opacity="0.75" stroke="#0b0b0b" stroke-opacity="0.14"/>
+      <text x="43.5" y="20.32" text-anchor="middle" font-family='"JetBrains Mono", SFMono-Regular, Consolas, "Liberation Mono", monospace' font-size="12" letter-spacing="1.2" fill="#0b0b0b">MONGODB</text>
+    </g>
+  <g transform="translate(855 206)">
+      <rect width="70" height="32" rx="16" fill="#ffffff" fill-opacity="0.75" stroke="#0b0b0b" stroke-opacity="0.14"/>
+      <text x="35" y="20.32" text-anchor="middle" font-family='"JetBrains Mono", SFMono-Regular, Consolas, "Liberation Mono", monospace' font-size="12" letter-spacing="1.2" fill="#0b0b0b">MYSQL</text>
+    </g>
+  <g transform="translate(935 206)">
+      <rect width="53" height="32" rx="16" fill="#ffffff" fill-opacity="0.75" stroke="#0b0b0b" stroke-opacity="0.14"/>
+      <text x="26.5" y="20.32" text-anchor="middle" font-family='"JetBrains Mono", SFMono-Regular, Consolas, "Liberation Mono", monospace' font-size="12" letter-spacing="1.2" fill="#0b0b0b">JWT</text>
+    </g>
+  <g transform="translate(998 206)">
+      <rect width="78" height="32" rx="16" fill="#ffffff" fill-opacity="0.75" stroke="#0b0b0b" stroke-opacity="0.14"/>
+      <text x="39" y="20.32" text-anchor="middle" font-family='"JetBrains Mono", SFMono-Regular, Consolas, "Liberation Mono", monospace' font-size="12" letter-spacing="1.2" fill="#0b0b0b">BCRYPT</text>
+    </g>
+  <text x="48" y="299" font-family='"JetBrains Mono", SFMono-Regular, Consolas, "Liberation Mono", monospace' font-size="12" letter-spacing="2.4" fill="#0b0b0b" fill-opacity=".55">PRODUCT &amp; AI</text>
+  <g transform="translate(240 278)">
+      <rect width="87" height="32" rx="16" fill="#ffffff" fill-opacity="0.75" stroke="#0b0b0b" stroke-opacity="0.14"/>
+      <text x="43.5" y="20.32" text-anchor="middle" font-family='"JetBrains Mono", SFMono-Regular, Consolas, "Liberation Mono", monospace' font-size="12" letter-spacing="1.2" fill="#0b0b0b">NEXT.JS</text>
+    </g>
+  <g transform="translate(337 278)">
+      <rect width="70" height="32" rx="16" fill="#ffffff" fill-opacity="0.75" stroke="#0b0b0b" stroke-opacity="0.14"/>
+      <text x="35" y="20.32" text-anchor="middle" font-family='"JetBrains Mono", SFMono-Regular, Consolas, "Liberation Mono", monospace' font-size="12" letter-spacing="1.2" fill="#0b0b0b">REACT</text>
+    </g>
+  <g transform="translate(417 278)">
+      <rect width="112" height="32" rx="16" fill="#ffffff" fill-opacity="0.75" stroke="#0b0b0b" stroke-opacity="0.14"/>
+      <text x="56" y="20.32" text-anchor="middle" font-family='"JetBrains Mono", SFMono-Regular, Consolas, "Liberation Mono", monospace' font-size="12" letter-spacing="1.2" fill="#0b0b0b">JAVASCRIPT</text>
+    </g>
+  <g transform="translate(539 278)">
+      <rect width="95" height="32" rx="16" fill="#ffffff" fill-opacity="0.75" stroke="#0b0b0b" stroke-opacity="0.14"/>
+      <text x="47.5" y="20.32" text-anchor="middle" font-family='"JetBrains Mono", SFMono-Regular, Consolas, "Liberation Mono", monospace' font-size="12" letter-spacing="1.2" fill="#0b0b0b">TAILWIND</text>
+    </g>
+  <g transform="translate(644 278)">
+      <rect width="104" height="32" rx="16" fill="#ffffff" fill-opacity="0.75" stroke="#0b0b0b" stroke-opacity="0.14"/>
+      <text x="52" y="20.32" text-anchor="middle" font-family='"JetBrains Mono", SFMono-Regular, Consolas, "Liberation Mono", monospace' font-size="12" letter-spacing="1.2" fill="#0b0b0b">LANGCHAIN</text>
+    </g>
+  <g transform="translate(758 278)">
+      <rect width="104" height="32" rx="16" fill="#ffffff" fill-opacity="0.75" stroke="#0b0b0b" stroke-opacity="0.14"/>
+      <text x="52" y="20.32" text-anchor="middle" font-family='"JetBrains Mono", SFMono-Regular, Consolas, "Liberation Mono", monospace' font-size="12" letter-spacing="1.2" fill="#0b0b0b">LANGGRAPH</text>
+    </g>
+  <g transform="translate(872 278)">
+      <rect width="53" height="32" rx="16" fill="#ffffff" fill-opacity="0.75" stroke="#0b0b0b" stroke-opacity="0.14"/>
+      <text x="26.5" y="20.32" text-anchor="middle" font-family='"JetBrains Mono", SFMono-Regular, Consolas, "Liberation Mono", monospace' font-size="12" letter-spacing="1.2" fill="#0b0b0b">RAG</text>
+    </g>
+  <g transform="translate(935 278)">
+      <rect width="53" height="32" rx="16" fill="#ffffff" fill-opacity="0.75" stroke="#0b0b0b" stroke-opacity="0.14"/>
+      <text x="26.5" y="20.32" text-anchor="middle" font-family='"JetBrains Mono", SFMono-Regular, Consolas, "Liberation Mono", monospace' font-size="12" letter-spacing="1.2" fill="#0b0b0b">MCP</text>
+    </g>
+  <g transform="translate(998 278)">
+      <rect width="112" height="32" rx="16" fill="#ffffff" fill-opacity="0.75" stroke="#0b0b0b" stroke-opacity="0.14"/>
+      <text x="56" y="20.32" text-anchor="middle" font-family='"JetBrains Mono", SFMono-Regular, Consolas, "Liberation Mono", monospace' font-size="12" letter-spacing="1.2" fill="#0b0b0b">AGENTIC AI</text>
+    </g>
+</svg>
