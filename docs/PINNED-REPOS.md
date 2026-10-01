@@ -35,7 +35,7 @@ Finally on your profile: **Customize your pins** → select these 6, in this ord
 
 ### 6. portfolio  *(push `D:\portfolio` as a repo named `portfolio`)*
 - **Description:** `🖤 Cinematic black & white portfolio — custom GLSL smoke, shader-displaced 3D matter, liquid-glass UI. Next.js · Three.js · Tailwind.`
-- **Website:** `https://portfolio-rho-ten-0vn49ndlzd.vercel.app`
+- **Website:** `https://dhrumil-kharadi.vercel.app`
 - **Topics:** `portfolio` `nextjs` `threejs` `react-three-fiber` `glsl` `tailwindcss` `webgl`
 
 > Waltain Energy and Urban_Furniture: keep public but don't pin. Six strong pins beat eight mixed ones.
@@ -54,7 +54,7 @@ Every public repo should have a description. Empty descriptions are what makes a
 - **Bio:** `DevOps Engineer & Full-Stack Developer · 1st @ IIT Gandhinagar hackathon · SIH finalist`
 - **Company:** `Freelance`
 - **Location:** `Ahmedabad, India`
-- **Website:** `https://portfolio-rho-ten-0vn49ndlzd.vercel.app`
+- **Website:** `https://dhrumil-kharadi.vercel.app`
 - **Social accounts:** LinkedIn → `https://www.linkedin.com/in/dhrumil-kharadi-639620324/`
 - **Profile picture:** a real photo (black & white matches the theme)
 - **Pronouns / status:** set status to 🚀 `Open to DevOps & full-stack roles`
